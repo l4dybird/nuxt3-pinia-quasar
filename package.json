@@ -6,11 +6,15 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "3.0.0-27291847.07c7a20"
+    "@quasar/vite-plugin": "^1.0.2",
+    "nuxt3": "3.0.0-27291847.07c7a20",
+    "sass": "^1.32.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.2",
-    "pinia": "^2.0.2"
+    "@quasar/extras": "^1.12.1",
+    "pinia": "^2.0.2",
+    "quasar": "^2.3.3"
   },
   "volta": {
     "node": "16.11.0",

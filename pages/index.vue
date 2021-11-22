@@ -11,9 +11,9 @@
       <div>
         doubleCountPlusOne:{{ main.doubleCountPlusOne }}
       </div>
-      <div>
-        <button @click="main.increment()">add</button>
-        <button @click="main.reset()">reset</button>
+      <div class="q-gutter-sm">
+        <q-btn color="primary" @click="main.increment()" label="add"/>
+        <q-btn outline color="primary" @click="main.reset()" label="reset"/>
       </div>
     </div>
   </div>
