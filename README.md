@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Pinia Quasar Starter
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
@@ -15,7 +15,7 @@ npm install
 Start the development server on http://localhost:3000
 
 ```bash
-npm dev
+npm run dev
 ```
 
 ## Production
@@ -23,7 +23,7 @@ npm dev
 Build the application for production:
 
 ```bash
-npm build
+npm run build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
