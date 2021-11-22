@@ -6,20 +6,19 @@ export default defineNuxtConfig({
     ssr: false,
     meta: {
         title: 'Nuxt3 + Pinia + Quasar',
-      },
+    },
     css: [
         '~/assets/styles/quasar.sass',
         '@quasar/extras/material-icons/material-icons.css'
     ],
     buildModules: [
-        // pinia plugin
-        '@pinia/nuxt',
+        '@pinia/nuxt'
     ],
     vite: {
         plugins: [
-          quasar({
-            sassVariables: 'assets/styles/quasar.variables.sass',
-          })
+            quasar({
+                sassVariables: 'assets/styles/quasar.variables.sass',
+            })
         ]
-      }
-})
+    }
+});
