@@ -1,6 +1,5 @@
 <template>
   <div>
-    <CText :text="text" />
     <div>
       <div>
         counter:{{ main.counter }}
