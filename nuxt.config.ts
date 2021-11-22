@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         title: 'Nuxt3 + Pinia + Quasar',
     },
     css: [
-        '~/assets/styles/quasar.sass',
+        '~/assets/styles/quasar.scss',
         '@quasar/extras/material-icons/material-icons.css'
     ],
     buildModules: [
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     vite: {
         plugins: [
             quasar({
-                sassVariables: 'assets/styles/quasar.variables.sass',
+                sassVariables: 'assets/styles/quasar.variables.scss',
             })
         ]
     }

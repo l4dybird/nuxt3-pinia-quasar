@@ -19,8 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '~/store/main'
+import { useMainStore } from '~/store/main';
 
 const main = useMainStore();
-const text = ref<string>("pinia exsample pages");
 </script>
