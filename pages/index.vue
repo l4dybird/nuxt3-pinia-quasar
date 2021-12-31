@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <q-page class="row items-center justify-evenly">
     <div>
       <div>
         counter:{{ main.counter }}
@@ -15,7 +15,7 @@
         <q-btn outline color="primary" @click="main.reset()" label="reset"/>
       </div>
     </div>
-  </div>
+  </q-page>
 </template>
 
 <script setup lang="ts">
