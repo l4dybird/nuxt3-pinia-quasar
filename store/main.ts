@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useMainStore = defineStore('main', {
     state: () => ({
-        counter: localStorage.getItem('count') ? Number(localStorage.getItem('count')) : 0,
+        counter:  0,
         name: 'Eduardo',
     }),
     getters: {
@@ -14,11 +14,9 @@ export const useMainStore = defineStore('main', {
     actions: {
         reset() {
             this.counter = 0;
-            localStorage.setItem('count', this.counter);
         },
         increment() {
             this.counter++;
-            localStorage.setItem('count', this.counter);
         }
     },
 })

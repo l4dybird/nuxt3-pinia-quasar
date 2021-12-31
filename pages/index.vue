@@ -2,6 +2,16 @@
 import { useMainStore } from '~/store/main';
 
 const main = useMainStore();
+
+watch(main, () => {
+  return localStorage.setItem('counter', main.counter.toString());
+});
+
+onMounted(() => {
+  if(localStorage.getItem('counter')) {
+    main.counter = Number(localStorage.getItem('counter'));
+  }
+});
 </script>
 
 <template>
