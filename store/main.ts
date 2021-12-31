@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useMainStore = defineStore('main', {
     state: () => ({
-        counter: 0,
+        counter: window.sessionStorage.getItem('count') ? Number(window.sessionStorage.getItem('count')) : 0,
         name: 'Eduardo',
     }),
     getters: {
@@ -13,10 +13,12 @@ export const useMainStore = defineStore('main', {
     },
     actions: {
         reset() {
-            this.counter = 0
+            this.counter = 0;
+            window.sessionStorage.setItem('count', this.counter);
         },
         increment() {
-            this.counter++
+            this.counter++;
+            window.sessionStorage.setItem('count', this.counter);
         }
     },
 })
