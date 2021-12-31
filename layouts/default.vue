@@ -2,7 +2,7 @@
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
-}
+};
 
 const essentialLinks = [
   {
@@ -83,7 +83,7 @@ const essentialLinks = [
           Essential Links
         </q-item-label>
 
-        <EssentialLink
+        <essential-link
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
