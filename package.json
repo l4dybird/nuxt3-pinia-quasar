@@ -7,14 +7,14 @@
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.0.2",
-    "nuxt3": "3.0.0-27291847.07c7a20",
+    "nuxt3": "latest",
     "sass": "^1.32.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.1.2",
     "@quasar/extras": "^1.12.1",
     "pinia": "^2.0.4",
-    "quasar": "^2.3.3"
+    "quasar": "^2.4.2"
   },
   "volta": {
     "node": "16.11.0",
