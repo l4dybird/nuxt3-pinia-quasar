@@ -18,7 +18,7 @@ const onSubmit = () => {
 
 const onReset = () => {
   text.value = null;
-  textFieldRef.value.textFieldRef.resetValidation();
+  textFieldRef.value.refs.resetValidation();
 };
 onMounted(() => {
   console.log(textFieldRef.value);
