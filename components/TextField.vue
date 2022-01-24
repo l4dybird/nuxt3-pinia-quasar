@@ -9,7 +9,7 @@ defineProps<Props>();
 const textFieldRef = ref(null);
 
 defineExpose({
-  textFieldRef,
+  refs: textFieldRef,
 });
 </script>
 

@@ -9,9 +9,9 @@ const textRules = [
 ];
 
 const onSubmit = () => {
-  textFieldRef.value.textFieldRef.validate();
+  textFieldRef.value.refs.validate();
 
-  if (textFieldRef.value.textFieldRef.hasError) {
+  if (textFieldRef.value.refs.hasError) {
     // form has error
   }
 };
