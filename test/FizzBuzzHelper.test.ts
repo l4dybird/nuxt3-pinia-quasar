@@ -3,7 +3,6 @@ import FizzBuzzHelper from '../helper/FizzBuzzHelper'
 
 describe('FizzBuzz', () => {
     it('Multiple of 3', () => {
-		
         expect(FizzBuzzHelper(3)).toBe('Fizz');
     });
 
@@ -19,7 +18,7 @@ describe('FizzBuzz', () => {
         expect(FizzBuzzHelper(1)).toBe('1');
     });
 
-	it('other type', () => {
+    it('other type', () => {
         expect(FizzBuzzHelper(null)).toBe('number type only');
     });
 });
