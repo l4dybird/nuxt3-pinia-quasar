@@ -3,7 +3,10 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "test": "vitest",
+    "test:watch": "vitest -w",
+    "coverage": "vitest --coverage"
   },
   "devDependencies": {
     "@quasar/vite-plugin": "^1.0.2",
@@ -14,7 +17,8 @@
     "@pinia/nuxt": "^0.1.2",
     "@quasar/extras": "^1.12.1",
     "pinia": "^2.0.4",
-    "quasar": "^2.4.2"
+    "quasar": "^2.4.2",
+    "vitest": "^0.2.4"
   },
   "volta": {
     "node": "16.11.0",
