@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 import { quasar } from '@quasar/vite-plugin'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/styles/quasar.scss',
+    'quasar/dist/quasar.prod.css',
     '@quasar/extras/material-icons/material-icons.css'
   ],
   buildModules: [
@@ -20,6 +21,9 @@ export default defineNuxtConfig({
       quasar({
         sassVariables: 'assets/styles/quasar.variables.scss',
       })
-    ]
+    ],
+    define: {
+      'import.meta.vitest': false,
+    },
   }
 });
