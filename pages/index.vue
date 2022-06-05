@@ -4,12 +4,12 @@ import { useMainStore } from '~/store/main';
 const main = useMainStore();
 
 watch(main, () => {
-  return localStorage.setItem('counter', main.counter.toString());
+  return sessionStorage.setItem('counter', main.counter.toString());
 });
 
 onMounted(() => {
-  if(localStorage.getItem('counter')) {
-    main.counter = Number(localStorage.getItem('counter'));
+  if(sessionStorage.getItem('counter')) {
+    main.counter = Number(sessionStorage.getItem('counter'));
   }
 });
 </script>
