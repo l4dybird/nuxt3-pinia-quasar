@@ -48,6 +48,10 @@ const essentialLinks = [
     link: 'https://awesome.quasar.dev'
   }
 ];
+
+definePageMeta({
+  middleware: 'auth'
+});
 </script>
 
 <template>

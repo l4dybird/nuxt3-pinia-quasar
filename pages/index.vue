@@ -3,6 +3,10 @@ import { useMainStore } from '~/store/main';
 
 const main = useMainStore();
 
+const hoge = useNuxtApp();
+
+console.log(hoge);
+
 watch(main, () => {
   return sessionStorage.setItem('counter', main.counter.toString());
 });
@@ -12,10 +16,14 @@ onMounted(() => {
     main.counter = Number(sessionStorage.getItem('counter'));
   }
 });
+
+definePageMeta({
+  layout: 'custom'
+});
 </script>
 
 <template>
-    <q-page class="row items-center justify-evenly">
+  <q-page class="row items-center justify-evenly">
     <div>
       <div>
         counter:{{ main.counter }}
