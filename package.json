@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@pinia/nuxt": "0.1.9",
-    "@quasar/extras": "1.14.1",
+    "@quasar/extras": "1.14.2",
     "@quasar/vite-plugin": "1.0.10",
     "nuxt": "npm:nuxt3@latest",
     "pinia": "2.0.14",
-    "quasar": "2.7.3",
+    "quasar": "2.7.5",
     "sass": "1.32.12",
-    "vitest": "0.15.2"
+    "vitest": "0.17.1"
   },
   "devDependencies": {
     "c8": "7.11.3"
