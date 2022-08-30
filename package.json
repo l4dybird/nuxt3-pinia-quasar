@@ -13,6 +13,7 @@
     "@pinia/nuxt": "0.4.1",
     "@quasar/extras": "1.15.2",
     "@quasar/vite-plugin": "1.1.1",
+    "@vitest/coverage-c8": "0.22.1",
     "sass": "1.32.12"
   },
   "dependencies": {
