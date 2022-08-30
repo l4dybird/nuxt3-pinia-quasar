@@ -1,10 +1,9 @@
 import { defineNuxtConfig } from "nuxt";
-import { quasar } from "@quasar/vite-plugin";
+import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
-  target: "static",
   meta: {
     title: "Nuxt3 + Pinia + Quasar",
   },
@@ -34,6 +33,9 @@ export default defineNuxtConfig({
     },
     define: {
       "import.meta.vitest": false,
+    },
+    vue: {
+      template: { transformAssetUrls },
     },
     plugins: [
       quasar({
