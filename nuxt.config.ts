@@ -32,13 +32,16 @@ export default defineNuxtConfig({
         },
       },
     },
+    define: {
+      "import.meta.vitest": false,
+    },
     plugins: [
       quasar({
         sassVariables: "assets/styles/quasar.variables.scss",
       }),
     ],
-    define: {
-      "import.meta.vitest": false,
+    test: {
+      includeSource: ["composables/*.{js,ts}"],
     },
   },
 });
