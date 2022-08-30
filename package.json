@@ -10,6 +10,7 @@
     "analyze": "nuxi analyze"
   },
   "devDependencies": {
+    "@nuxt/test-utils-edge": "npm:@nuxt/test-utils-edge@latest",
     "@pinia/nuxt": "0.4.1",
     "@quasar/extras": "1.15.2",
     "@quasar/vite-plugin": "1.1.1",
