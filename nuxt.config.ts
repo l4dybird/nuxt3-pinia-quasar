@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     "@quasar/extras/material-icons/material-icons.css",
   ],
   buildModules: ["@pinia/nuxt"],
-
   experimental: {
     reactivityTransform: true,
   },

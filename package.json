@@ -6,26 +6,27 @@
     "start": "node .output/server/index.mjs",
     "test": "vitest",
     "test:watch": "vitest -w",
-    "coverage": "vitest --coverage"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "0.1.9",
-    "@quasar/extras": "1.15.0",
-    "@quasar/vite-plugin": "1.0.10",
-    "nuxt": "3.0.0-rc.6",
-    "pinia": "2.0.14",
-    "quasar": "2.7.5",
-    "sass": "1.32.12",
-    "vitest": "0.18.1"
+    "coverage": "vitest --coverage",
+    "analyze": "nuxi analyze"
   },
   "devDependencies": {
-    "c8": "7.12.0"
+    "@pinia/nuxt": "0.4.1",
+    "@quasar/extras": "1.15.2",
+    "@quasar/vite-plugin": "1.1.1",
+    "sass": "1.32.12"
+  },
+  "dependencies": {
+    "nuxt": "npm:nuxt3@latest",
+    "pinia": "2.0.21",
+    "quasar": "2.7.7",
+    "vitest": "0.22.1",
+    "vue": "3.2.38"
   },
   "resolutions": {
     "sass": "1.32.12"
   },
   "volta": {
-    "node": "16.16.0",
-    "npm": "8.11.0"
+    "node": "16.17.0",
+    "npm": "8.15.0"
   }
 }
