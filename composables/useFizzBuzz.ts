@@ -15,29 +15,3 @@ const useFizzBuzz = (value: number): string => {
 };
 
 export default useFizzBuzz;
-
-if (import.meta.vitest) {
-  const { describe, it, expect } = import.meta.vitest;
-
-  describe("FizzBuzz", () => {
-    it("Multiple of 3", () => {
-      expect(useFizzBuzz(3)).toBe("Fizz");
-    });
-
-    it("Multiple of 5", () => {
-      expect(useFizzBuzz(5)).toBe("Buzz");
-    });
-
-    it("Multiple of 15", () => {
-      expect(useFizzBuzz(15)).toBe("FizzBuzz");
-    });
-
-    it("other number", () => {
-      expect(useFizzBuzz(1)).toBe("1");
-    });
-
-    it("other type", () => {
-      expect(useFizzBuzz(null)).toBe("number type only");
-    });
-  });
-}
