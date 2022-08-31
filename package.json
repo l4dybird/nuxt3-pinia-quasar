@@ -6,8 +6,9 @@
     "generate": "nuxi generate",
     "start": "node .output/server/index.mjs",
     "test": "vitest",
+    "test:ui": "vitest --ui",
     "test:watch": "vitest -w",
-    "coverage": "vitest --coverage",
+    "test:coverage": "vitest --coverage",
     "analyze": "nuxi analyze"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
     "@quasar/extras": "1.15.2",
     "@quasar/vite-plugin": "1.1.1",
     "@vitest/coverage-c8": "0.22.1",
+    "@vitest/ui": "^0.22.1",
     "sass": "1.32.12"
   },
   "dependencies": {
