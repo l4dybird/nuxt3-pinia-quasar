@@ -16,15 +16,15 @@
     "@pinia/nuxt": "0.4.1",
     "@quasar/extras": "1.15.2",
     "@quasar/vite-plugin": "1.1.1",
-    "@vitest/coverage-c8": "0.23.1",
-    "@vitest/ui": "0.23.1",
+    "@vitest/coverage-c8": "0.22.1",
+    "@vitest/ui": "^0.22.1",
     "sass": "1.32.12"
   },
   "dependencies": {
     "nuxt": "npm:nuxt3@latest",
     "pinia": "2.0.21",
     "quasar": "2.7.7",
-    "vitest": "0.23.1",
+    "vitest": "0.22.1",
     "vue": "3.2.38"
   },
   "resolutions": {
