@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import useFizzBuzz from "../composables/useFizzBuzz";
 
 describe("FizzBuzz", () => {

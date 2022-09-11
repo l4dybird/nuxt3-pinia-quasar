@@ -14,19 +14,19 @@
   "devDependencies": {
     "@nuxt/test-utils-edge": "3.0.0-rc.9-27703329.537338f",
     "@nuxt/kit": "3.0.0-rc.9",
-    "@pinia/nuxt": "0.4.1",
-    "@quasar/extras": "1.15.2",
+    "@pinia/nuxt": "0.4.2",
+    "@quasar/extras": "1.15.3",
     "@quasar/vite-plugin": "1.1.1",
-    "@vitest/coverage-c8": "0.22.1",
-    "@vitest/ui": "^0.22.1",
+    "@vitest/coverage-c8": "0.23.2",
+    "@vitest/ui": "0.23.2",
     "sass": "1.32.12"
   },
   "dependencies": {
     "nuxt": "3.0.0-rc.9",
-    "pinia": "2.0.21",
+    "pinia": "2.0.22",
     "quasar": "2.7.7",
-    "vitest": "0.22.1",
-    "vue": "3.2.38"
+    "vitest": "0.23.2",
+    "vue": "3.2.39"
   },
   "resolutions": {
     "sass": "1.32.12"

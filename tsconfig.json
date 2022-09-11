@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "types": [
-      "vitest/importMeta"
+      "vitest/globals"
     ],
   },
   // https://v3.nuxtjs.org/concepts/typescript

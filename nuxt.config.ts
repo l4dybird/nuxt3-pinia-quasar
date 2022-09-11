@@ -31,9 +31,6 @@ export default defineNuxtConfig({
         },
       },
     },
-    define: {
-      "import.meta.vitest": false,
-    },
     vue: {
       template: { transformAssetUrls },
     },
@@ -42,8 +39,5 @@ export default defineNuxtConfig({
         sassVariables: "assets/styles/quasar.variables.scss",
       }),
     ],
-    test: {
-      includeSource: ["composables/*.{js,ts}"],
-    },
   },
 });
