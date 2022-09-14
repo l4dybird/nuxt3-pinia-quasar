@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from "nuxt";
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config

@@ -12,19 +12,25 @@
     "analyze": "nuxi analyze"
   },
   "devDependencies": {
-    "@nuxt/test-utils-edge": "3.0.0-rc.10-27719531.09c42fd",
     "@nuxt/kit": "3.0.0-rc.10",
+    "@nuxt/test-utils": "3.0.0-rc.10",
     "@pinia/nuxt": "0.4.2",
     "@quasar/extras": "1.15.3",
     "@quasar/vite-plugin": "1.1.1",
+    "@vitejs/plugin-vue": "3.1.0",
     "@vitest/coverage-c8": "0.23.2",
     "@vitest/ui": "0.23.2",
+    "@vue/test-utils": "2.0.2",
+    "happy-dom": "^6.0.4",
+    "playwright": "1.25.2",
     "sass": "1.32.12"
   },
   "dependencies": {
+    "@pinia/testing": "^0.0.14",
     "nuxt": "3.0.0-rc.10",
     "pinia": "2.0.22",
     "quasar": "2.7.7",
+    "unplugin-auto-import": "^0.11.2",
     "vitest": "0.23.2",
     "vue": "3.2.39"
   },

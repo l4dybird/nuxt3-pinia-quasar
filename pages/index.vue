@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <q-page class="row items-center justify-evenly">
+  <div class="row items-center justify-evenly">
     <div>
       <div>
         counter:{{ main.counter }}
@@ -26,10 +26,11 @@ onMounted(() => {
       <div>
         doubleCountPlusOne:{{ main.doubleCountPlusOne }}
       </div>
+      <p>testing</p>
       <div class="q-gutter-sm">
-        <q-btn color="primary" @click="main.increment()" label="add"/>
+        <q-btn class="add" color="primary" @click="main.increment()" label="add"/>
         <q-btn outline color="primary" @click="main.reset()" label="reset"/>
       </div>
     </div>
-  </q-page>
+  </div>
 </template>
