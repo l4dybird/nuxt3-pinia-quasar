@@ -4,6 +4,9 @@
       "vitest/globals"
     ],
   },
+  "vueCompilerOptions": {
+    "target": 3
+  },
   // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json"
 }
