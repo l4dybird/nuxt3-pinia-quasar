@@ -12,7 +12,9 @@ export default defineConfig({
     Vue({
       template: { transformAssetUrls },
     }),
-    quasar(),
+    quasar({
+      sassVariables: "assets/styles/quasar.variables.scss",
+    }),
   ],
   resolve: {
     alias: [{ find: "~/", replacement: "./" }],
