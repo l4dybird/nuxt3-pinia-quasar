@@ -1,12 +1,13 @@
-import { defineNuxtConfig } from "nuxt";
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
-  meta: {
-    title: "Nuxt3 + Pinia + Quasar",
+  app: {
+    head: {
+      title:"Nuxt3 + Pinia + Quasar",
+    }
   },
+  ssr: false,
   css: [
     "~/assets/styles/quasar.scss",
     "quasar/dist/quasar.prod.css",
