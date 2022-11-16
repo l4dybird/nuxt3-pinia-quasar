@@ -12,21 +12,21 @@
     "analyze": "nuxi analyze"
   },
   "devDependencies": {
-    "@nuxt/kit": "3.0.0-rc.13",
-    "@nuxt/test-utils": "3.0.0-rc.13",
+    "@nuxt/kit": "3.0.0",
+    "@nuxt/test-utils": "3.0.0",
     "@pinia/nuxt": "0.4.3",
     "@quasar/extras": "1.15.5",
     "@quasar/vite-plugin": "1.2.3",
-    "@vitest/coverage-c8": "0.25.1",
-    "@vitest/ui": "0.25.1",
+    "@vitest/coverage-c8": "0.25.2",
+    "@vitest/ui": "0.25.2",
     "sass": "1.32.12"
   },
   "dependencies": {
-    "nuxt": "3.0.0-rc.13",
+    "nuxt": "3.0.0",
     "pinia": "2.0.23",
-    "quasar": "2.10.1",
-    "vitest": "0.25.1",
-    "vue": "3.2.41"
+    "quasar": "2.10.2",
+    "vitest": "0.25.2",
+    "vue": "3.2.45"
   },
   "resolutions": {
     "sass": "1.32.12"
