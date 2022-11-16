@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     "quasar/dist/quasar.prod.css",
     "@quasar/extras/material-icons/material-icons.css",
   ],
-  buildModules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt"],
   vite: {
     build: {},
     vue: {
