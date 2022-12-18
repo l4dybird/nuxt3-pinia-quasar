@@ -14,8 +14,12 @@ export default defineNuxtConfig({
     "@quasar/extras/material-icons/material-icons.css",
   ],
   modules: ["@pinia/nuxt"],
+  build: {
+    transpile: ["quasar"]
+  },
   vite: {
-    build: {},
+    build: {
+    },
     vue: {
       template: { transformAssetUrls },
     },
