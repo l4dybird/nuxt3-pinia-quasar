@@ -1,5 +1,5 @@
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
-
+const quasarModules = ["quasar", "@quasar/extras", "@quasar/extras"]
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -19,6 +19,14 @@ export default defineNuxtConfig({
   },
   vite: {
     build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            const seprateModule = quasarModules.find(module => id.includes(module));
+            if (seprateModule) return seprateModule;
+          }
+        }
+      }
     },
     vue: {
       template: { transformAssetUrls },
