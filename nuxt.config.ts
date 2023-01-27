@@ -26,7 +26,8 @@ export default defineNuxtConfig({
             if (seprateModule) return seprateModule;
           }
         }
-      }
+      },
+      sourcemap: true
     },
     vue: {
       template: { transformAssetUrls },
