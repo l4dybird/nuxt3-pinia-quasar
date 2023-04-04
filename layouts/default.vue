@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { versions } = useNuxtApp();
+const { vue, nuxt } = versions;
+
 const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
@@ -66,8 +69,7 @@ const essentialLinks = [
         <q-toolbar-title>
           Quasar App
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Nuxt v{{ nuxt }}, Vue v{{ vue }}, Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
