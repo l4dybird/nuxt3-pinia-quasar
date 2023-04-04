@@ -69,7 +69,11 @@ const essentialLinks = [
         <q-toolbar-title>
           Quasar App
         </q-toolbar-title>
-        <div>Nuxt v{{ nuxt }}, Vue v{{ vue }}, Quasar v{{ $q.version }}</div>
+        <div class="q-gutter-sm">
+          <span>Nuxt v{{ nuxt }},</span>
+          <span>Vue v{{ vue }},</span>
+          <span>Quasar v{{ $q.version }}</span>
+        </div>
       </q-toolbar>
     </q-header>
 

@@ -3,10 +3,6 @@ import { fileURLToPath } from "node:url";
 import { dependencies } from "package.json";
 
 describe("works with module option setting", async () => {
-  const sassVariablesPath = `${fileURLToPath(
-    new URL("../playground", import.meta.url)
-  )}/assets/styles/quasar.variables.scss`;
-
   await setup({
     browser: true,
     rootDir: fileURLToPath(new URL("../playground", import.meta.url)),
