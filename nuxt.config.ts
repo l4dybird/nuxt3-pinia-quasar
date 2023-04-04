@@ -1,5 +1,6 @@
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 const quasarModules = ["quasar", "@quasar/extras", "@quasar/extras"];
+
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -10,7 +11,6 @@ export default defineNuxtConfig({
   ssr: false,
   css: [
     "~/assets/styles/quasar.scss",
-    "quasar/dist/quasar.prod.css",
     "@quasar/extras/material-icons/material-icons.css",
   ],
   modules: ["@nuxt/devtools", "@pinia/nuxt"],
@@ -31,14 +31,14 @@ export default defineNuxtConfig({
       },
       sourcemap: true,
     },
-    // vue: {
-    //   template: { transformAssetUrls },
-    // },
-    // plugins: [
-    //   quasar({
-    //     sassVariables: "assets/styles/quasar.variables.scss",
-    //   }),
-    // ],
+    vue: {
+      template: { transformAssetUrls },
+    },
+    plugins: [
+      quasar({
+        sassVariables: "assets/styles/quasar.variables.scss",
+      }),
+    ],
   },
   devtools: {
     // Enable devtools (default: true)
