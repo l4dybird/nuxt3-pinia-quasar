@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
 import { installQuasarPlugin } from "@quasar/quasar-app-extension-testing-unit-vitest";
 import * as components from "quasar";
-import Button from "../components/Button.vue";
+import Button from "~/components/Button.vue";
 
 installQuasarPlugin({
   components,
