@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     "~/assets/styles/quasar.scss",
     "@quasar/extras/material-icons/material-icons.css",
   ],
-  modules: ["@nuxt/devtools", "@pinia/nuxt", "nuxt-vitest"],
+  modules: ["@pinia/nuxt", "nuxt-vitest"],
   build: {
     transpile: ["quasar"],
   },
@@ -27,11 +27,8 @@ export default defineNuxtConfig({
     ],
   },
   devtools: {
-    // Enable devtools (default: true)
     enabled: true,
 
-    // VS Code Server options
-    // ...other options
     vscode: {},
 
     timeline: {
