@@ -17,7 +17,7 @@ describe("sample testing", () => {
     expect(wrapper.text()).toBe("label");
   });
 
-  it("two-way-binding", async () => {
+  test.each(["two-way-binding", 1, null])("two-way-binding", async (value) => {
     let wrapper: VueWrapper<components.QInput>;
     wrapper = shallowMount(components.QInput, {
       props: {
@@ -26,7 +26,25 @@ describe("sample testing", () => {
           await wrapper.setProps({ modelValue }),
       },
     });
-    await wrapper.find("[type='text']").setValue("two-way-binding");
-    expect(wrapper.vm.$props.modelValue).toBe("two-way-binding");
+
+    await wrapper.find("[type='text']").setValue(value);
+    expect(wrapper.vm.$props.modelValue).toBe(String(value));
   });
+
+  test.each(["two-way-binding", 1, null])(
+    "update:modelValue",
+    async (value) => {
+      let wrapper: VueWrapper<components.QInput>;
+      wrapper = shallowMount(components.QInput, {
+        props: {
+          modelValue: "",
+          "onUpdate:modelValue": async (modelValue: string | number | null) =>
+            await wrapper.setProps({ modelValue }),
+        },
+      });
+
+      await wrapper.vm.$emit("update:modelValue", value);
+      expect(wrapper.vm.$props.modelValue).toBe(value);
+    }
+  );
 });
