@@ -17,6 +17,17 @@ export default defineNuxtConfig({
     transpile: ["quasar"],
   },
   vite: {
+    $client: {
+      build: {
+        rollupOptions: {
+          output: {
+            chunkFileNames: "_nuxt/[hash].js",
+            assetFileNames: "_nuxt/[hash][extname]",
+            entryFileNames: "_nuxt/[hash].js",
+          },
+        },
+      },
+    },
     vue: {
       template: { transformAssetUrls },
     },
