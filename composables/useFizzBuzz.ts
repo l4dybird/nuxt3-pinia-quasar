@@ -1,16 +1,16 @@
 const useFizzBuzz = (value: number): string => {
-  if (typeof value === "number") {
+  if (typeof value === 'number') {
     if (value % 3 === 0 && value % 5 !== 0) {
-      return "Fizz";
+      return 'Fizz';
     } else if (value % 3 !== 0 && value % 5 === 0) {
-      return "Buzz";
+      return 'Buzz';
     } else if (value % 3 === 0 && value % 5 === 0) {
-      return "FizzBuzz";
+      return 'FizzBuzz';
     } else {
       return value.toString();
     }
   } else {
-    return "number type only";
+    return 'number type only';
   }
 };
 

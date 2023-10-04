@@ -1,5 +1,5 @@
 import { VueWrapper, mount, shallowMount } from "@vue/test-utils";
-import { installQuasarPlugin } from "@quasar/quasar-app-extension-testing-unit-vitest";
+import { installQuasarPlugin } from "~/helpers/install-quasar-plugin";
 import * as components from "quasar";
 import Button from "~/components/Button.vue";
 

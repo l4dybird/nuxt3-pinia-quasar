@@ -3,5 +3,5 @@ defineProps<{ label: string }>();
 </script>
 
 <template>
-    <QBtn :label="label" />
+  <QBtn :label="label" />
 </template>

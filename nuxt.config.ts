@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     "~/assets/styles/quasar.scss",
     "@quasar/extras/material-icons/material-icons.css",
   ],
-  modules: ["@pinia/nuxt", "nuxt-vitest"],
+  modules: ["@pinia/nuxt"],
   build: {
     transpile: ["quasar"],
   },
