@@ -1,22 +1,19 @@
-import { defineConfig } from "vitest/config";
-import Vue from "@vitejs/plugin-vue";
-import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
+// vitest.config.ts
+import { fileURLToPath } from "node:url";
+import { defineVitestConfig } from "nuxt-vitest/config";
 
-export default defineConfig({
-  plugins: [
-    Vue({
-      template: { transformAssetUrls },
-    }),
-    quasar({
-      sassVariables: "src/quasar-variables.scss",
-    }),
-  ],
+export default defineVitestConfig({
   test: {
-    alias: {
-      "~": "./",
-    },
-    dir: "tests",
     globals: true,
-    environment: "happy-dom",
+    environment: "nuxt",
+    // you can optionally set nuxt-specific environment options
+    // environmentOptions: {
+    //   nuxt: {
+    //     rootDir: fileURLToPath(new URL('./playground', import.meta.url)),
+    //     overrides: {
+    //       // other nuxt config you want to pass
+    //     }
+    //   }
+    // }
   },
 });

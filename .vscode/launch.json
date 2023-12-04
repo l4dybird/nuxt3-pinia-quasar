@@ -1,39 +1,38 @@
 {
-    "version": "0.2.0",
-    "compounds": [
-      {
-        "name": "fullstack: Nuxt & Chrome",
-        "configurations": ["server: Nuxt", "client: Chrome"]
-      }
-    ],
-    "configurations": [
-      {
-        "type": "pwa-node",
-        "request": "launch",
-        "name": "Debug Current Test File",
-        "autoAttachChildProcesses": true,
-        "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
-        "program": "${workspaceRoot}/node_modules/vitest/vitest.mjs",
-        "args": ["run", "${relativeFile}"],
-        "smartStep": true,
-        "console": "integratedTerminal"
-      },
-      {
-        "name": "client: Chrome",
-        "request": "launch",
-        "type": "chrome",
-        "url": "http://localhost:3000",
-        "webRoot": "${workspaceFolder}",
-      },
-      {
-        "name": "server: Nuxt",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}",
-        "runtimeExecutable": "npm",
-        "runtimeArgs": ["run", "dev"],
-        "console": "integratedTerminal"
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "fullstack: Nuxt & Chrome",
+      "configurations": ["server: Nuxt", "client: Chrome"]
+    }
+  ],
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Debug Current Test File",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+      "program": "${workspaceRoot}/node_modules/vitest/vitest.mjs",
+      "args": ["run", "${relativeFile}"],
+      "smartStep": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "client: Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+    },
+    {
+      "name": "server: Nuxt",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

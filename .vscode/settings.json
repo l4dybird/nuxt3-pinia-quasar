@@ -1,9 +1,10 @@
-    
 {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "vitest.commandLine" : "npx vitest"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vitest.commandLine" : "npx vitest"
 }

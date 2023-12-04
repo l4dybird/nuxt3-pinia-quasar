@@ -1,6 +1,6 @@
 import { config } from "@vue/test-utils";
 import { cloneDeep } from "lodash-es";
-import { Quasar, QuasarPluginOptions } from "quasar";
+import { Quasar, type QuasarPluginOptions } from "quasar";
 import { qLayoutInjections } from "./layout-injections";
 import { beforeAll, afterAll } from "vitest";
 

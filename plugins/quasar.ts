@@ -1,5 +1,5 @@
-import { Quasar } from 'quasar';
-import * as components from 'quasar';
+import { Quasar } from "quasar";
+import * as components from "quasar";
 import {
   ClosePopup as vClosePopup,
   Intersection as vIntersection,
@@ -12,27 +12,30 @@ import {
   TouchPan as vTouchPan,
   TouchRepeat as vTouchRepeat,
   TouchSwipe as vTouchSwipe,
-} from 'quasar';
+} from "quasar";
 
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(Quasar, {
-    components,
-    directives: {
-      vClosePopup,
-      vIntersection,
-      vMorph,
-      vMutation,
-      vRipple,
-      vScroll,
-      vScrollFire,
-      vTouchHold,
-      vTouchPan,
-      vTouchRepeat,
-      vTouchSwipe,
-    },
-    plugins: {},
-    iconSet: undefined,
-    config: {},
-    lang: undefined,
-  });
+export default defineNuxtPlugin({
+  name: "quasar",
+  async setup(nuxtApp) {
+    nuxtApp.vueApp.use(Quasar, {
+      components,
+      directives: {
+        vClosePopup,
+        vIntersection,
+        vMorph,
+        vMutation,
+        vRipple,
+        vScroll,
+        vScrollFire,
+        vTouchHold,
+        vTouchPan,
+        vTouchRepeat,
+        vTouchSwipe,
+      },
+      plugins: {},
+      iconSet: undefined,
+      config: {},
+      lang: undefined,
+    });
+  },
 });
