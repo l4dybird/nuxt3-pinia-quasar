@@ -1,5 +1,5 @@
-import { Quasar } from 'quasar';
-import * as components from 'quasar';
+import { Quasar } from "quasar";
+import * as components from "quasar";
 import {
   ClosePopup as vClosePopup,
   Intersection as vIntersection,
@@ -12,7 +12,7 @@ import {
   TouchPan as vTouchPan,
   TouchRepeat as vTouchRepeat,
   TouchSwipe as vTouchSwipe,
-} from 'quasar';
+} from "quasar";
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(Quasar, {
